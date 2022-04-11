@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/mean.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <main class="digital-clock">
+        <section class="clock">
+            <i class="uil uil-ellipsis-v menu-btn"></i>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <span class="format-text">12h format</span>
+                    <div class="format-btn" data-format="12"></div>
+                </li>
+            </ul>
+            <div class="time-container">
+                <span class="hour">08:30</span>
+                <div class="right-container">
+                    <span class="period">PM</span>
+                    <span class="seconds">20</span>
+                </div>
+            </div>
+            <div class="calendar">
+                <span class="day-name">Day</span>
+                <span class="day-number">00</span>
+                <span class="month-name">Month</span>
+                <span class="year">2002</span>
+            </div>
+        </section>
+        <section class="timer-block">
+                <div class="timer-time">
+                    <span class="timer-text timer-hour">00</span>
+                    <span class="timer-text">:</span>
+                    <span class="timer-text timer-min">00</span>
+                    <span class="timer-text">:</span>
+                    <span class="timer-text timer-sec">00</span>
+                </div>
+                <div class="timer-icons">
+                    <i class="uil uil-play timer-btn btn-start" title="Start"></i>
+                    <i class="uil uil-stop-circle timer-btn btn-control" title="Pause"></i>
+                    <i class="uil uil-stopwatch timer-btn btn-reset" title="New"></i>
+                </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>

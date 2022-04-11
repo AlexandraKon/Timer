@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2e2e44;
+}
+
+.digital-clock {
+    position : relative;
+    color: #fff;
+    background: #2d2f41;
+    width: 425px;
+    padding: 10px 35px;
+    box-shadow: 0 5px 25px rgba(1, 1, 0, 0.8);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 0 10px;
+    line-height: 125px;
+    font-size: 6.5em;
+    background: -webkit-linear-gradient(90deg, rgb(155, 112, 230), rgb(226, 151, 241));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.right-container {
+    position: relative;
+    min-height: 125px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.seconds {
+    background: -webkit-linear-gradient(90deg, rgb(155, 112, 230), rgb(226, 151, 241));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.period {
+    background: -webkit-linear-gradient(90deg, rgb(235, 245, 179), #8ef5bc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    background: -webkit-linear-gradient(90deg, #8ef5bc, rgb(248, 235, 150));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 500;
+}
+
+.month-name, .day-number, .year {
+    margin-left: 8px;
+}
+
+.day-name {
+    margin-right: 20px;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 10px 10px 0;
+    color: #efefef;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu-list {
+    z-index: 999;
+    margin-left: 160px;
+    margin-bottom: 10px;
+    list-style: none;
+    background: #353e54;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.menu-list.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.format-text {
+    color: #efefef;
+    font-size: 0.9em;
+    margin-right: 20px;
+}
+
+.format-btn {
+    width: 35px;
+    height: 15px;
+    background: #485470;
+    border-radius: 75px;
+    box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+                inset -2px -2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.format-btn:before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #e394fa;
+    border-radius: 50%;
+    box-shadow: 0 5px 25px #e394fa;
+    transform: translateX(-10px);
+    transition: 0.3s ease;
+    
+}
+
+.format-btn.active:before {
+    background: #8ef5bc;
+    box-shadow: 0 5px 25px #8ef5bc;
+    transform: translateX(10px);
+}
+
+.timer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-btn {
+    margin: 0px 30px 0px 0;
+    color: #efefef;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.timer-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 5em;
+    background: -webkit-linear-gradient(90deg, rgb(148, 155, 230), rgb(84, 227, 141));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}

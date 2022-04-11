@@ -1,0 +1,23 @@
+{
+  "name": "Timer-Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --no-source-maps --no-minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexandrakononenko/Timer-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ]
+}
