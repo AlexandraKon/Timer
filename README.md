@@ -6,5 +6,5 @@ https://alexandra-timer.netlify.app/
 
 ### Technologies used:
 
-HTML, CSS and JavaScript
+HTML, CSS, Parcel and language JavaScript
 
