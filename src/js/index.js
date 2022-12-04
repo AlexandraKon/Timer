@@ -20,6 +20,8 @@ let second = 0;
 let millisecond = 0;
 let cronom;
 
+console.log("Timer created by Alexandra Kononenko");
+
 //Change the period(24h or 12h)
 formatBtn.addEventListener("click", () => {
     formatBtn.classList.toggle("active");
