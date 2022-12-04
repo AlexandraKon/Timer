@@ -1,6 +1,6 @@
 ﻿# Timer
  
-![image](https://user-images.githubusercontent.com/92441983/172070848-5a6dc06e-0644-41d3-99c0-73b87c169668.png)
+![image](https://user-images.githubusercontent.com/92441983/205497435-e0bd7bbe-55ae-49d9-9cc0-fdb9aec114fc.png)
 
 ## Link to access
 https://timer-alexandra-knn.netlify.app/
