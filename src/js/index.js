@@ -80,15 +80,15 @@ function checkTime (hour) {
 function showDate() {
     const today = new Date();
 
-    let year = today.getFullYear(); //doesnt work!!!
     let dayNumber = today.getDate();
     let dayName = today.toLocaleString("default", {weekday: "long"});
     let monthName = today.toLocaleString("default", {month: "short"});
+    let year = today.getFullYear();
 
     document.querySelector(".day-name").innerHTML = dayName;
     document.querySelector(".day-number").innerHTML = dayNumber;
     document.querySelector(".month-name").innerHTML = monthName;
-    document.querySelector(".year").innerHtml = year;
+    document.querySelector(".year").innerHTML = year;
 }
 
 showDate();
